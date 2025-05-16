@@ -110,4 +110,4 @@ MIT License. See LICENSE for details.
 
 ## 👨‍💻 Developer
 **Aayush Karki**  
-[GitHub](https://github.com/your-github-username) • [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
+[GitHub](https://github.com/karkiayush) • [LinkedIn](https://www.linkedin.com/in/aayush-karki-18b18221a/)

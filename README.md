@@ -1,12 +1,12 @@
-# 📝 Blogify
+# Blogify
 
 A modern, cross-platform **Flutter** application for a public blogging platform where users can read, discover, and engage with blog content. Built using **Material Design 3**, this app is responsive, supports dark/light themes, and offers an intuitive user experience on mobile phones and tablets.
 
 ---
 
-## 📱 Screens & Features
+## Screens & Features
 
-### ✅ Core Screens
+###  Core Screens
 - **Home Page**
     - Featured blog carousel
     - Recent posts
@@ -39,7 +39,7 @@ A modern, cross-platform **Flutter** application for a public blogging platform 
 
 ---
 
-## 🧩 Key Components
+## Key Components
 
 - **Blog Card** – Title, image, author, excerpt, publish date
 - **Comment UI** – Threaded replies with voting
@@ -49,7 +49,7 @@ A modern, cross-platform **Flutter** application for a public blogging platform 
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Flutter** (with Material 3)
 - **Dart** (null safety enabled)
@@ -73,7 +73,8 @@ lib/
 ├── components/
 ├── services/
 ├── theme/
-└── main.dart ```
+└── main.dart 
+```
 
 
 ---

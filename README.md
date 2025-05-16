@@ -79,7 +79,7 @@ lib/
 
 ---
 
-## 🧑‍💻 Getting Started
+## Getting Started
 
 1. **Clone the repo:**
 
@@ -93,7 +93,7 @@ lib/
 3. **Run the app:**
     ```flutter run ```
 
-## 🛠️ Roadmap
+## 🛣️ Roadmap
 
 - [ ] Connect to backend API (Node.js or Spring Boot)
 - [ ] Add comment functionality

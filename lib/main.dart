@@ -1,5 +1,5 @@
 import 'package:blogify/providers/obsecure_text_provider.dart';
-import 'package:blogify/screens/signup_screen.dart';
+import 'package:blogify/screens/login_screen.dart';
 import 'package:blogify/shared/string_value.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: SignupScreen(),
+        home: LoginScreen(),
       ),
     );
   }

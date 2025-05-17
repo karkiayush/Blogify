@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import '../shared/custom_color.dart';
 import '../widgets/login_signup_formfield_widget.dart';
 
-class SignupScreen extends StatelessWidget {
-  const SignupScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

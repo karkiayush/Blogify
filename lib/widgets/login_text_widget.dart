@@ -1,5 +1,3 @@
-import 'package:blogify/screens/login_screen.dart';
-import 'package:blogify/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/custom_color.dart';
@@ -22,8 +20,7 @@ class LoginTextWidget extends StatelessWidget {
         SizedBox(width: 8),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => LoginScreen()));
+            Navigator.pop(context);
           },
           child: Text(
             "Log in",

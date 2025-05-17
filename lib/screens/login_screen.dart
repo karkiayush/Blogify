@@ -1,8 +1,8 @@
-import 'package:blogify/screens/forget_password_screen.dart';
 import 'package:blogify/widgets/button_widget.dart';
 import 'package:blogify/widgets/custom_divider_widget.dart';
 import 'package:blogify/widgets/forgot_password_widget.dart';
 import 'package:blogify/widgets/onboarding_text_widget.dart';
+import 'package:blogify/widgets/social_login_button_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/custom_color.dart';
@@ -87,7 +87,23 @@ class LoginScreen extends StatelessWidget {
                     ),
                     CustomDividerWidget(),
                   ],
-                )
+                ),
+                SizedBox(height: 18),
+                SocialLoginButtonWidget(
+                  minWidth: width,
+                  minHeight: height * 0.065,
+                  icon: Icons.face,
+                  buttonText: "Continue with Google",
+                  iconImagePath: 'assets/images/google_icon.png',
+                ),
+                SizedBox(height: 18),
+                SocialLoginButtonWidget(
+                  minWidth: width,
+                  minHeight: height * 0.065,
+                  icon: Icons.face,
+                  buttonText: "Continue with Facebook",
+                  iconImagePath: 'assets/images/fb_icon.png',
+                ),
               ],
             ),
           ),

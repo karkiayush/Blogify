@@ -2,6 +2,7 @@ import 'package:blogify/widgets/onboarding_text_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/custom_color.dart';
+import '../widgets/login_signup_formfield_widget.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -15,7 +16,8 @@ class SignupScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: CustomColor.darkThemeColor,
         body: Padding(
-          padding: const EdgeInsets.all(12.0),
+          padding:
+              const EdgeInsets.only(top: 20, left: 12, right: 12, bottom: 12),
           child: Container(
             height: height,
             width: width,
@@ -41,6 +43,17 @@ class SignupScreen extends StatelessWidget {
                 OnboardingTextWidget(
                   onBoardingText: "Welcome Back !",
                   supportingText: "Log In to Continue",
+                ),
+                SizedBox(height: 15),
+                LoginSignupFormFieldWidget(
+                  introText: "Email or Username",
+                  hintText: "Enter your email or username",
+                ),
+                SizedBox(height: 15),
+                LoginSignupFormFieldWidget(
+                  introText: "Password",
+                  hintText: "Enter your password",
+                  isPassword: true,
                 )
               ],
             ),

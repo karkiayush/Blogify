@@ -1,7 +1,12 @@
+import 'package:blogify/screens/forget_password_screen.dart';
+import 'package:blogify/widgets/button_widget.dart';
+import 'package:blogify/widgets/custom_divider_widget.dart';
+import 'package:blogify/widgets/forgot_password_widget.dart';
 import 'package:blogify/widgets/onboarding_text_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/custom_color.dart';
+import '../shared/custom_fontsize.dart';
 import '../widgets/login_signup_formfield_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -18,9 +23,7 @@ class LoginScreen extends StatelessWidget {
         body: Padding(
           padding:
               const EdgeInsets.only(top: 20, left: 12, right: 12, bottom: 12),
-          child: Container(
-            height: height,
-            width: width,
+          child: SingleChildScrollView(
             child: Column(
               /*  mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: ,*/
@@ -54,6 +57,36 @@ class LoginScreen extends StatelessWidget {
                   introText: "Password",
                   hintText: "Enter your password",
                   isPassword: true,
+                ),
+                SizedBox(height: 18),
+                // TODo: Implement the onPressed Functionality of button
+                ButtonWidget(
+                  buttonText: "Log In",
+                  minWidth: width,
+                  minHeight: height * 0.065,
+                ),
+                SizedBox(height: 18),
+                ForgotPasswordWidget(),
+                SizedBox(height: 18),
+
+                // Divider containing OR
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CustomDividerWidget(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: Text(
+                        "OR",
+                        style: TextStyle(
+                          color: CustomColor.hintTextColor,
+                          fontWeight: FontWeight.bold,
+                          fontSize: CustomFontsize.alternativeOptionFontSize,
+                        ),
+                      ),
+                    ),
+                    CustomDividerWidget(),
+                  ],
                 )
               ],
             ),

@@ -6,4 +6,5 @@ class CustomColor {
   static Color supportingTextColor = Color(0xffc6c6c6);
   static Color hintTextColor = Colors.grey;
   static Color formFieldBackgroundColor = Color(0xFF1A202C);
+  static Color themeColor = Color(0xff34a0a4);
 }

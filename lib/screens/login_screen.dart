@@ -2,6 +2,7 @@ import 'package:blogify/widgets/button_widget.dart';
 import 'package:blogify/widgets/custom_divider_widget.dart';
 import 'package:blogify/widgets/forgot_password_widget.dart';
 import 'package:blogify/widgets/onboarding_text_widget.dart';
+import 'package:blogify/widgets/signup_text_widget.dart';
 import 'package:blogify/widgets/social_login_button_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -104,6 +105,8 @@ class LoginScreen extends StatelessWidget {
                   buttonText: "Continue with Facebook",
                   iconImagePath: 'assets/images/fb_icon.png',
                 ),
+                SizedBox(height: 18),
+                SignupTextWidget(),
               ],
             ),
           ),

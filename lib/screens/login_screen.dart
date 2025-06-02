@@ -10,8 +10,16 @@ import '../shared/custom_color.dart';
 import '../shared/custom_fontsize.dart';
 import '../widgets/login_signup_formfield_widget.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +58,13 @@ class LoginScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 LoginSignupFormFieldWidget(
-                  introText: "Email or Username",
-                  hintText: "Enter your email or username",
+                  controller: _emailController,
+                  introText: "Email",
+                  hintText: "Enter your email",
                 ),
                 SizedBox(height: 15),
                 LoginSignupFormFieldWidget(
+                  controller: _passwordController,
                   introText: "Password",
                   hintText: "Enter your password",
                   isPassword: true,

@@ -7,12 +7,14 @@ class LoginSignupFormFieldWidget extends StatelessWidget {
   final String introText;
   final String hintText;
   final bool isPassword;
+  final TextEditingController controller;
 
   const LoginSignupFormFieldWidget({
     super.key,
     required this.introText,
     required this.hintText,
     this.isPassword = false,
+    required this.controller,
   });
 
   @override
@@ -40,6 +42,7 @@ class LoginSignupFormFieldWidget extends StatelessWidget {
                 BorderRadius.circular(12.0), // Curvy corners for the background
           ),
           child: TextFormField(
+            controller: controller,
             obscureText: isObsecure,
             cursorColor: Colors.white,
             decoration: InputDecoration(

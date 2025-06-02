@@ -5,14 +5,21 @@ import '../shared/custom_color.dart';
 import '../shared/custom_fontsize.dart';
 import '../widgets/button_widget.dart';
 import '../widgets/custom_divider_widget.dart';
-import '../widgets/forgot_password_widget.dart';
 import '../widgets/login_signup_formfield_widget.dart';
 import '../widgets/onboarding_text_widget.dart';
-import '../widgets/signup_text_widget.dart';
 import '../widgets/social_login_button_widget.dart';
 
-class SignupScreen extends StatelessWidget {
+class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
+
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+  final _nameController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -51,16 +58,19 @@ class SignupScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 LoginSignupFormFieldWidget(
+                  controller: _nameController,
                   introText: "Full Name",
                   hintText: "Enter your full name",
                 ),
                 SizedBox(height: 15),
                 LoginSignupFormFieldWidget(
+                  controller: _emailController,
                   introText: "Email",
                   hintText: "Enter your email",
                 ),
                 SizedBox(height: 15),
                 LoginSignupFormFieldWidget(
+                  controller: _passwordController,
                   introText: "Password",
                   hintText: "Enter your password",
                   isPassword: true,

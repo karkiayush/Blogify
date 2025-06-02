@@ -60,7 +60,7 @@ A modern, cross-platform **Flutter** application for a public blogging platform 
 
 ---
 
-## 🗂 Folder Structure
+## Folder Structure
 ```
 lib/
 ├── models/
@@ -93,21 +93,10 @@ lib/
 3. **Run the app:**
     ```flutter run ```
 
-## 🛣️ Roadmap
-
-- [ ] Connect to backend API (Node.js or Spring Boot)
-- [ ] Add comment functionality
-- [ ] Implement OAuth login
-- [ ] Add offline caching support
-- [ ] Admin dashboard (web version)
-
-
-## 🤝 Contributing
+##  Contributing
 Feel free to fork the project, open issues, or submit PRs for enhancements or bug fixes.
 
-## 📄 License
-MIT License. See LICENSE for details.
 
-## 👨‍💻 Developer
+## ‍💻 Developer
 **Aayush Karki**  
 [GitHub](https://github.com/karkiayush) • [LinkedIn](https://www.linkedin.com/in/aayush-karki-18b18221a/)
